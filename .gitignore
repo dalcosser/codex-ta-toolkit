@@ -70,6 +70,9 @@ app_pre_theta_backup.py
 app_theta_working_backup.py
 appbackup.py
 
+# Generated reports
+reports/
+
 # Temp files
 nul
 tmp_*.txt
