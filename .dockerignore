@@ -1,0 +1,10 @@
+.env
+.env.old
+__pycache__
+*.pyc
+.git
+.claude
+data/
+*.parquet
+tools/
+_fix*.py

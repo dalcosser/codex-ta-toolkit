@@ -1,0 +1,83 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.build/
+dist/
+
+# Virtual env
+.venv/
+venv/
+ENV/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Streamlit cache
+.streamlit/cache/
+
+# Secrets — NEVER commit
+.env
+*.env
+.ch_sync_state.json
+
+# Large data dirs — stored in ClickHouse, not GitHub
+per_ticker_daily/
+per_ticker_minute/
+*.parquet
+
+# Excel data files (local Bloomberg)
+*.xlsx
+*.xlsb
+*.xls
+
+# HuggingFace model cache
+.cache/
+
+# Temp fix/debug scripts
+_fix_*.py
+_*.txt
+.nav_cache
+.env.old
+.claude/
+Max Test*.py
+
+# Old app versions and backups
+app.py
+app.py.bak*
+app2.py
+app3.py
+app3_backup.py
+app8.py
+app9.py
+app10.py
+app10f.py
+app10ff.py
+app11.py
+app12.py
+app14.py
+app15.py
+app16.py
+app17.py
+app_backup*.py
+app_merge_backup.py
+app_pre_theta_backup.py
+app_theta_working_backup.py
+appbackup.py
+
+# Temp files
+nul
+tmp_*.txt
+temp_*.txt
+temp_*.py
+test_*.py
+test_*.txt
+*.csv
+diagnose_yf.py
+fetch_test.py
+data_sanity_check.py

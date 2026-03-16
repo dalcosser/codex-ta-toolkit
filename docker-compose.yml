@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      # Mount your local parquet data (read-only is fine)
+      - ${PARQUET_HOST_DIR:-./data/parquet}:/data/parquet:ro
+      - ${MINUTE_HOST_DIR:-./data/minute}:/data/minute:ro
+      # Mount Bloomberg spreadsheets (optional, for Global tabs)
+      - ${SPREADSHEETS_DIR:-./data/spreadsheets}:/data/spreadsheets:ro
+    restart: unless-stopped

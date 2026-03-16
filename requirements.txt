@@ -1,0 +1,13 @@
+streamlit>=1.36.0
+pandas>=2.2.2
+numpy>=1.26.4
+plotly>=5.24.1
+scipy>=1.11.4
+yfinance>=0.2.43
+yahooquery
+python-dotenv
+openpyxl
+pyarrow
+httpx
+requests
+xlrd

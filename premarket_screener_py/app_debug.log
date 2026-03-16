@@ -1,0 +1,561 @@
+2026-02-19T10:19:39.511142 | Starting Python premarket screener
+2026-02-19T10:19:41.467496 | Starting Python premarket screener
+2026-02-19T10:19:48.591045 | Refresh error: 'market_cap'
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'market_cap'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\Documents\Visual Code\codex_ta_toolkit\premarket_screener_py\premarket_screener_dash.py", line 752, in refresh_snapshot
+    df["market_cap_fmt"] = df["market_cap"].apply(format_money)
+                           ~~^^^^^^^^^^^^^^
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'market_cap'
+
+2026-02-19T10:19:50.380145 | Starting Python premarket screener
+2026-02-19T10:23:55.378580 | Starting Python premarket screener
+2026-02-19T10:23:56.838384 | Starting Python premarket screener
+2026-02-19T10:24:20.384068 | Refresh error: 'market_cap'
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'market_cap'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\Documents\Visual Code\codex_ta_toolkit\premarket_screener_py\premarket_screener_dash.py", line 752, in refresh_snapshot
+    df["market_cap_fmt"] = df["market_cap"].apply(format_money)
+                           ~~^^^^^^^^^^^^^^
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'market_cap'
+
+2026-02-19T10:24:23.594052 | Refresh error: 'market_cap'
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'market_cap'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\Documents\Visual Code\codex_ta_toolkit\premarket_screener_py\premarket_screener_dash.py", line 752, in refresh_snapshot
+    df["market_cap_fmt"] = df["market_cap"].apply(format_money)
+                           ~~^^^^^^^^^^^^^^
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'market_cap'
+
+2026-02-19T10:37:03.777624 | Starting Python premarket screener
+2026-02-19T10:37:03.861554 | Starting Python premarket screener
+2026-02-19T10:39:44.010484 | Starting Python premarket screener
+2026-02-19T10:39:44.024178 | Starting Python premarket screener
+2026-02-19T10:39:48.531004 | Refresh error: 'market_cap'
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'market_cap'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\Documents\Visual Code\codex_ta_toolkit\premarket_screener_py\premarket_screener_dash.py", line 874, in refresh_snapshot
+    df["market_cap_fmt"] = df["market_cap"].apply(format_money)
+                           ~~^^^^^^^^^^^^^^
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'market_cap'
+
+2026-02-19T10:40:03.897055 | Refresh error: 'market_cap'
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'market_cap'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\Documents\Visual Code\codex_ta_toolkit\premarket_screener_py\premarket_screener_dash.py", line 874, in refresh_snapshot
+    df["market_cap_fmt"] = df["market_cap"].apply(format_money)
+                           ~~^^^^^^^^^^^^^^
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'market_cap'
+
+2026-02-19T10:40:24.843176 | Refresh error: 'market_cap'
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'market_cap'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\Documents\Visual Code\codex_ta_toolkit\premarket_screener_py\premarket_screener_dash.py", line 874, in refresh_snapshot
+    df["market_cap_fmt"] = df["market_cap"].apply(format_money)
+                           ~~^^^^^^^^^^^^^^
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'market_cap'
+
+2026-02-19T10:54:08.026480 | Starting Python premarket screener
+2026-02-19T11:05:04.912650 | Refresh error: 'market_cap'
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'market_cap'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\Documents\Visual Code\codex_ta_toolkit\premarket_screener_py\premarket_screener_dash.py", line 874, in refresh_snapshot
+    df["market_cap_fmt"] = df["market_cap"].apply(format_money)
+                           ~~^^^^^^^^^^^^^^
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'market_cap'
+
+2026-02-19T11:05:20.340926 | Refresh error: 'market_cap'
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'market_cap'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\Documents\Visual Code\codex_ta_toolkit\premarket_screener_py\premarket_screener_dash.py", line 874, in refresh_snapshot
+    df["market_cap_fmt"] = df["market_cap"].apply(format_money)
+                           ~~^^^^^^^^^^^^^^
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'market_cap'
+
+2026-02-19T11:25:35.192268 | Refresh error: 'market_cap'
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'market_cap'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\Documents\Visual Code\codex_ta_toolkit\premarket_screener_py\premarket_screener_dash.py", line 874, in refresh_snapshot
+    df["market_cap_fmt"] = df["market_cap"].apply(format_money)
+                           ~~^^^^^^^^^^^^^^
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'market_cap'
+
+2026-02-19T11:26:38.729006 | Starting Python premarket screener
+2026-02-19T11:26:38.898651 | Starting Python premarket screener
+2026-02-19T11:36:16.540899 | Starting Python premarket screener
+2026-02-19T11:36:16.673979 | Starting Python premarket screener
+2026-02-19T11:38:13.195657 | Refresh error: 'market_cap'
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'market_cap'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\Documents\Visual Code\codex_ta_toolkit\premarket_screener_py\premarket_screener_dash.py", line 914, in refresh_snapshot
+    df["market_cap_fmt"] = df["market_cap"].apply(format_money)
+                           ~~^^^^^^^^^^^^^^
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'market_cap'
+
+2026-02-19T11:38:15.576366 | Starting Python premarket screener
+2026-02-19T11:38:19.819381 | Starting Python premarket screener
+2026-02-19T11:55:34.184719 | Refresh error: 'market_cap'
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'market_cap'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\Documents\Visual Code\codex_ta_toolkit\premarket_screener_py\premarket_screener_dash.py", line 914, in refresh_snapshot
+    df["market_cap_fmt"] = df["market_cap"].apply(format_money)
+                           ~~^^^^^^^^^^^^^^
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'market_cap'
+
+2026-02-19T11:55:49.565856 | Starting Python premarket screener
+2026-02-19T11:55:49.880131 | Starting Python premarket screener
+2026-02-19T12:00:47.494236 | Refresh error: 'market_cap'
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'market_cap'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\David Alcosser\Documents\Visual Code\codex_ta_toolkit\premarket_screener_py\premarket_screener_dash.py", line 914, in refresh_snapshot
+    df["market_cap_fmt"] = df["market_cap"].apply(format_money)
+                           ~~^^^^^^^^^^^^^^
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\David Alcosser\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'market_cap'
+
+2026-02-19T12:00:52.438160 | Starting Python premarket screener
+2026-02-19T12:00:52.438459 | Starting Python premarket screener
+2026-02-19T12:50:43.688418 | Starting Python premarket screener
+2026-02-19T13:17:38.248097 | Starting Python premarket screener
+2026-02-19T13:17:38.516225 | Starting Python premarket screener
+2026-02-19T13:17:41.000236 | Starting Python premarket screener
+2026-02-19T13:17:41.234184 | Starting Python premarket screener
+2026-02-19T14:17:39.208029 | Starting Python premarket screener
+2026-02-19T14:18:02.319487 | Starting Python premarket screener
+2026-02-19T14:18:02.374847 | Starting Python premarket screener
+2026-02-19T14:33:45.123168 | Starting Python premarket screener
+2026-02-19T15:17:39.797839 | Starting Python premarket screener
+2026-02-19T15:17:40.373282 | Starting Python premarket screener
+2026-02-19T15:18:02.120603 | Starting Python premarket screener
+2026-02-19T15:18:02.575526 | Starting Python premarket screener
+2026-02-19T15:36:46.192519 | Starting Python premarket screener
+2026-02-19T15:36:46.824432 | Starting Python premarket screener
+2026-02-19T15:36:54.705572 | Starting Python premarket screener
+2026-02-19T15:36:55.057785 | Starting Python premarket screener
+2026-02-19T16:17:41.273531 | Starting Python premarket screener
+2026-02-19T16:18:03.258844 | Starting Python premarket screener
+2026-02-19T16:18:03.309028 | Starting Python premarket screener
+2026-02-19T17:17:39.486754 | Starting Python premarket screener
+2026-02-19T17:17:39.831028 | Starting Python premarket screener
+2026-02-19T17:21:28.325859 | Starting Python premarket screener
+2026-02-19T17:21:28.515717 | Starting Python premarket screener
+2026-02-19T18:17:40.854515 | Starting Python premarket screener
+2026-02-19T18:17:40.932469 | Starting Python premarket screener
+2026-02-19T18:24:07.945427 | Starting Python premarket screener
+2026-02-19T18:24:07.997648 | Starting Python premarket screener
+2026-02-19T18:24:10.601425 | Starting Python premarket screener
+2026-02-19T19:17:41.416430 | Starting Python premarket screener
+2026-02-19T19:17:41.533895 | Starting Python premarket screener
+2026-02-19T19:24:08.303789 | Starting Python premarket screener
+2026-02-19T19:24:08.325343 | Starting Python premarket screener
+2026-02-19T19:24:20.895778 | Starting Python premarket screener
+2026-02-19T19:24:20.923711 | Starting Python premarket screener
+2026-02-19T20:17:41.483784 | Starting Python premarket screener
+2026-02-19T20:17:41.870264 | Starting Python premarket screener
+2026-02-19T20:24:09.204641 | Starting Python premarket screener
+2026-02-19T20:24:09.598707 | Starting Python premarket screener
+2026-02-19T20:24:32.084496 | Starting Python premarket screener
+2026-02-19T20:24:32.666650 | Starting Python premarket screener
+2026-02-19T21:17:41.776739 | Starting Python premarket screener
+2026-02-19T21:17:41.795022 | Starting Python premarket screener
+2026-02-19T21:17:51.671248 | Starting Python premarket screener
+2026-02-19T21:17:51.677268 | Starting Python premarket screener
+2026-02-19T21:24:10.527464 | Starting Python premarket screener
+2026-02-19T21:24:10.529620 | Starting Python premarket screener
+2026-02-19T22:17:42.006407 | Starting Python premarket screener
+2026-02-19T22:17:42.108081 | Starting Python premarket screener
+2026-02-19T22:17:44.421606 | Starting Python premarket screener
+2026-02-19T22:17:44.499741 | Starting Python premarket screener
+2026-02-19T22:24:11.174045 | Starting Python premarket screener
+2026-02-19T22:24:11.282673 | Starting Python premarket screener
+2026-02-19T22:24:13.554944 | Starting Python premarket screener
+2026-02-19T22:24:13.696982 | Starting Python premarket screener
+2026-02-19T23:17:42.996607 | Starting Python premarket screener
+2026-02-19T23:17:43.202685 | Starting Python premarket screener
+2026-02-19T23:17:45.295063 | Starting Python premarket screener
+2026-02-19T23:24:12.037559 | Starting Python premarket screener
+2026-02-19T23:24:12.037657 | Starting Python premarket screener
+2026-02-20T00:17:43.843901 | Starting Python premarket screener
+2026-02-20T00:17:44.015527 | Starting Python premarket screener
+2026-02-20T00:17:46.352073 | Starting Python premarket screener
+2026-02-20T00:17:46.548411 | Starting Python premarket screener
+2026-02-20T00:24:13.285324 | Starting Python premarket screener
+2026-02-20T00:24:13.483648 | Starting Python premarket screener
+2026-02-20T00:51:14.374696 | Starting Python premarket screener
+2026-02-20T00:51:14.376114 | Starting Python premarket screener
+2026-02-20T01:17:44.384444 | Starting Python premarket screener
+2026-02-20T01:17:44.599072 | Starting Python premarket screener
+2026-02-20T01:24:14.150416 | Starting Python premarket screener
+2026-02-20T01:24:14.464188 | Starting Python premarket screener
+2026-02-20T02:17:45.983981 | Starting Python premarket screener
+2026-02-20T02:17:46.104084 | Starting Python premarket screener
+2026-02-20T02:21:34.877215 | Starting Python premarket screener
+2026-02-20T02:21:34.898649 | Starting Python premarket screener
+2026-02-20T02:24:15.406372 | Starting Python premarket screener
+2026-02-20T02:24:15.406527 | Starting Python premarket screener
+2026-02-20T03:17:45.878038 | Starting Python premarket screener
+2026-02-20T03:17:46.309055 | Starting Python premarket screener
+2026-02-20T03:24:15.691880 | Starting Python premarket screener
+2026-02-20T03:24:16.018859 | Starting Python premarket screener
+2026-02-20T03:24:18.082404 | Starting Python premarket screener
+2026-02-20T03:58:37.307868 | Starting Python premarket screener
+2026-02-20T03:58:37.738481 | Starting Python premarket screener
+2026-02-20T04:17:47.156640 | Starting Python premarket screener
+2026-02-20T04:17:47.679368 | Starting Python premarket screener
+2026-02-20T04:24:16.483392 | Starting Python premarket screener
+2026-02-20T04:24:16.909761 | Starting Python premarket screener
+2026-02-20T05:17:47.165456 | Starting Python premarket screener
+2026-02-20T05:17:47.417855 | Starting Python premarket screener
+2026-02-20T05:24:17.032132 | Starting Python premarket screener
+2026-02-20T05:24:17.142252 | Starting Python premarket screener
+2026-02-20T05:24:28.595045 | Starting Python premarket screener
+2026-02-20T05:24:28.643531 | Starting Python premarket screener
+2026-02-20T06:17:48.878381 | Starting Python premarket screener
+2026-02-20T06:17:48.934659 | Starting Python premarket screener
+2026-02-20T06:24:18.260410 | Starting Python premarket screener
+2026-02-20T06:24:18.342567 | Starting Python premarket screener
+2026-02-20T06:24:20.897575 | Starting Python premarket screener
+2026-02-20T06:24:21.002672 | Starting Python premarket screener
+2026-02-20T06:24:26.857759 | Starting Python premarket screener
+2026-02-20T06:24:27.062179 | Starting Python premarket screener
+2026-02-20T06:24:29.558597 | Starting Python premarket screener
+2026-02-20T06:24:29.751104 | Starting Python premarket screener
+2026-02-20T07:17:48.242196 | Starting Python premarket screener
+2026-02-20T07:17:48.754717 | Starting Python premarket screener
+2026-02-20T07:24:18.934440 | Starting Python premarket screener
+2026-02-20T07:24:19.161983 | Starting Python premarket screener
+2026-02-20T07:24:30.561421 | Starting Python premarket screener
+2026-02-20T07:24:30.742732 | Starting Python premarket screener
+2026-02-20T08:17:49.474884 | Starting Python premarket screener
+2026-02-20T08:17:49.807532 | Starting Python premarket screener
+2026-02-20T08:24:19.638592 | Starting Python premarket screener
+2026-02-20T08:24:20.093611 | Starting Python premarket screener
+2026-02-20T08:24:31.236999 | Starting Python premarket screener
+2026-02-20T08:24:31.591847 | Starting Python premarket screener
+2026-02-20T08:37:32.517335 | Starting Python premarket screener
+2026-02-20T08:37:32.517727 | Starting Python premarket screener
+2026-02-20T09:21:29.797089 | Starting Python premarket screener
+2026-02-20T09:21:29.990544 | Starting Python premarket screener
+2026-02-20T09:23:43.652506 | Starting Python premarket screener
+2026-02-20T09:23:43.668923 | Starting Python premarket screener
+2026-02-20T09:24:24.832217 | Starting Python premarket screener
+2026-02-20T09:24:24.836907 | Starting Python premarket screener
+2026-02-20T09:24:36.823594 | Starting Python premarket screener
+2026-02-20T09:24:36.885873 | Starting Python premarket screener
+2026-02-20T10:21:30.537369 | Starting Python premarket screener
+2026-02-20T10:21:30.944511 | Starting Python premarket screener
+2026-02-20T10:24:26.341037 | Starting Python premarket screener
+2026-02-20T10:24:26.792087 | Starting Python premarket screener
+2026-02-20T10:24:38.578099 | Starting Python premarket screener
+2026-02-20T10:24:39.003007 | Starting Python premarket screener
+2026-02-20T11:21:33.060153 | Starting Python premarket screener
+2026-02-20T11:24:27.711496 | Starting Python premarket screener
+2026-02-20T11:24:27.712148 | Starting Python premarket screener
+2026-02-20T11:24:40.222813 | Starting Python premarket screener
+2026-02-20T11:24:40.239845 | Starting Python premarket screener
+2026-02-20T13:18:05.409177 | Starting Python premarket screener
+2026-02-20T13:18:05.409379 | Starting Python premarket screener
+2026-02-20T13:18:08.122827 | Starting Python premarket screener
+2026-02-20T13:20:16.066622 | Starting Python premarket screener
+2026-02-20T13:29:45.245481 | Starting Python premarket screener
+2026-02-20T13:29:45.545437 | Starting Python premarket screener
+2026-02-20T14:18:06.339164 | Starting Python premarket screener
+2026-02-20T14:18:06.403781 | Starting Python premarket screener
+2026-02-20T14:18:09.392259 | Starting Python premarket screener
+2026-02-20T14:18:09.397053 | Starting Python premarket screener
+2026-02-20T15:18:06.762389 | Starting Python premarket screener
+2026-02-20T15:18:06.798714 | Starting Python premarket screener
+2026-02-20T15:18:30.974901 | Starting Python premarket screener
+2026-02-20T15:18:31.021090 | Starting Python premarket screener
+2026-02-20T16:18:17.054951 | Starting Python premarket screener
+2026-02-20T16:18:17.329279 | Starting Python premarket screener
+2026-02-20T16:18:19.829187 | Starting Python premarket screener
+2026-02-20T16:18:20.096674 | Starting Python premarket screener
+2026-02-20T16:18:39.952233 | Starting Python premarket screener
+2026-02-20T16:18:40.223415 | Starting Python premarket screener
+2026-02-20T17:21:34.111632 | Starting Python premarket screener
+2026-02-20T17:21:34.858482 | Starting Python premarket screener
+2026-02-20T17:21:36.655950 | Starting Python premarket screener
+2026-02-20T17:21:37.370989 | Starting Python premarket screener
+2026-02-20T18:00:36.778402 | Starting Python premarket screener
+2026-02-20T18:00:36.809005 | Starting Python premarket screener
+2026-02-20T18:21:34.387818 | Starting Python premarket screener
+2026-02-20T18:21:35.025305 | Starting Python premarket screener
+2026-02-20T18:21:56.644677 | Starting Python premarket screener
+2026-02-20T18:21:57.002022 | Starting Python premarket screener
+2026-02-20T19:21:35.198041 | Starting Python premarket screener
+2026-02-20T19:21:35.375592 | Starting Python premarket screener
+2026-02-20T20:18:10.350305 | Starting Python premarket screener
+2026-02-20T20:21:35.099822 | Starting Python premarket screener
+2026-02-20T20:21:35.117552 | Starting Python premarket screener
+2026-02-20T21:18:10.381897 | Starting Python premarket screener
+2026-02-20T21:18:10.747348 | Starting Python premarket screener
+2026-02-20T21:21:34.975548 | Starting Python premarket screener
+2026-02-20T21:21:35.360788 | Starting Python premarket screener
+2026-02-20T22:18:13.629216 | Starting Python premarket screener
+2026-02-20T22:18:13.629292 | Starting Python premarket screener
+2026-02-20T22:24:44.463290 | Starting Python premarket screener
+2026-02-20T22:24:44.511714 | Starting Python premarket screener
+2026-02-20T23:18:13.768348 | Starting Python premarket screener
+2026-02-20T23:18:14.206216 | Starting Python premarket screener
+2026-02-20T23:24:45.519627 | Starting Python premarket screener
+2026-02-20T23:24:45.972865 | Starting Python premarket screener
+2026-02-21T00:16:26.148189 | Starting Python premarket screener
+2026-02-21T00:16:26.293936 | Starting Python premarket screener
+2026-02-21T00:18:14.431532 | Starting Python premarket screener
+2026-02-21T00:18:14.446444 | Starting Python premarket screener
+2026-02-21T00:24:47.360911 | Starting Python premarket screener
+2026-02-21T00:24:47.402959 | Starting Python premarket screener
+2026-02-21T01:18:17.049147 | Starting Python premarket screener
+2026-02-21T01:18:17.049876 | Starting Python premarket screener
+2026-02-21T01:24:47.914814 | Starting Python premarket screener
+2026-02-21T01:24:48.031297 | Starting Python premarket screener
+2026-02-21T01:41:00.348055 | Starting Python premarket screener
+2026-02-21T01:41:00.598903 | Starting Python premarket screener
+2026-02-21T02:18:16.076589 | Starting Python premarket screener
+2026-02-21T02:18:16.358641 | Starting Python premarket screener
+2026-02-21T02:18:28.584224 | Starting Python premarket screener
+2026-02-21T02:18:28.834519 | Starting Python premarket screener
+2026-02-21T02:24:48.672393 | Starting Python premarket screener
+2026-02-21T02:24:48.705927 | Starting Python premarket screener
+2026-02-21T03:21:34.000526 | Starting Python premarket screener
+2026-02-21T03:21:34.373575 | Starting Python premarket screener
+2026-02-21T03:21:38.537240 | Starting Python premarket screener
+2026-02-21T03:21:38.892483 | Starting Python premarket screener
+2026-02-21T03:21:40.980204 | Starting Python premarket screener
+2026-02-21T03:21:41.306110 | Starting Python premarket screener
+2026-02-21T03:24:49.564183 | Starting Python premarket screener
+2026-02-21T03:24:49.895269 | Starting Python premarket screener
+2026-02-21T04:23:40.612535 | Starting Python premarket screener
+2026-02-21T04:23:41.401035 | Starting Python premarket screener
+2026-02-21T04:24:50.314857 | Starting Python premarket screener
+2026-02-21T04:24:50.435934 | Starting Python premarket screener
+2026-02-21T05:12:09.331776 | Starting Python premarket screener
+2026-02-21T05:12:09.638223 | Starting Python premarket screener
+2026-02-21T05:23:41.434097 | Starting Python premarket screener
+2026-02-21T05:23:41.855753 | Starting Python premarket screener
+2026-02-21T05:24:50.323614 | Starting Python premarket screener
+2026-02-21T05:24:50.685665 | Starting Python premarket screener
+2026-02-21T06:23:42.453895 | Starting Python premarket screener
+2026-02-21T06:23:42.619667 | Starting Python premarket screener
+2026-02-21T06:24:51.403387 | Starting Python premarket screener
+2026-02-21T06:24:51.519028 | Starting Python premarket screener
+2026-02-21T07:23:42.857367 | Starting Python premarket screener
+2026-02-21T07:23:43.233216 | Starting Python premarket screener
+2026-02-21T07:24:51.713287 | Starting Python premarket screener
+2026-02-21T07:24:52.009155 | Starting Python premarket screener
+2026-02-21T08:23:42.755459 | Starting Python premarket screener
+2026-02-21T08:23:42.905275 | Starting Python premarket screener
+2026-02-21T08:23:55.089690 | Starting Python premarket screener
+2026-02-21T08:23:55.328267 | Starting Python premarket screener
+2026-02-21T08:24:52.872427 | Starting Python premarket screener
+2026-02-21T08:24:53.136104 | Starting Python premarket screener
+2026-02-21T09:23:41.384645 | Starting Python premarket screener
+2026-02-21T09:23:41.384662 | Starting Python premarket screener
+2026-02-21T09:23:46.813962 | Starting Python premarket screener
+2026-02-21T09:23:46.829949 | Starting Python premarket screener
+2026-02-21T09:23:59.314153 | Starting Python premarket screener
+2026-02-21T09:23:59.325453 | Starting Python premarket screener
+2026-02-21T09:24:54.096890 | Starting Python premarket screener
+2026-02-21T09:24:54.130427 | Starting Python premarket screener
+2026-02-21T10:05:53.385313 | Starting Python premarket screener
+2026-02-21T11:20:10.538631 | Starting Python premarket screener
+2026-02-21T12:23:48.686964 | Starting Python premarket screener
+2026-02-21T12:23:50.816040 | Starting Python premarket screener
+2026-02-21T13:23:51.100965 | Starting Python premarket screener
+2026-02-21T14:23:49.913178 | Starting Python premarket screener
+2026-02-21T14:23:52.022429 | Starting Python premarket screener
+2026-02-21T15:23:50.359959 | Starting Python premarket screener
+2026-02-21T16:23:50.442545 | Starting Python premarket screener
+2026-02-21T17:23:51.580640 | Starting Python premarket screener
+2026-02-21T17:23:53.806274 | Starting Python premarket screener
+2026-02-21T18:23:52.040867 | Starting Python premarket screener
+2026-02-21T18:24:01.248384 | Starting Python premarket screener
+2026-02-22T04:53:34.668392 | Starting Python premarket screener
+2026-02-22T06:18:12.163292 | Starting Python premarket screener
+2026-02-22T07:21:38.940340 | Starting Python premarket screener
+2026-02-22T07:21:41.193141 | Starting Python premarket screener
+2026-02-22T08:21:39.753736 | Starting Python premarket screener
+2026-02-22T08:21:42.050764 | Starting Python premarket screener
+2026-02-22T09:23:59.343279 | Starting Python premarket screener
+2026-02-22T10:23:59.360107 | Starting Python premarket screener
+2026-02-22T16:20:00.048030 | Starting Python premarket screener
