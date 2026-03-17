@@ -26,21 +26,36 @@ except ImportError:
 _client = None
 
 
+def _get_secret(key, default=""):
+    """Read from os.environ first, then st.secrets (Streamlit Cloud)."""
+    val = os.environ.get(key, "").strip()
+    if val:
+        return val
+    try:
+        import streamlit as st
+        val = st.secrets.get(key, "")
+        if val:
+            return str(val).strip()
+    except Exception:
+        pass
+    return default
+
+
 def _get_client():
     global _client
     if _client is not None:
         return _client
 
-    host = os.environ.get("CLICKHOUSE_HOST", "").strip()
+    host = _get_secret("CLICKHOUSE_HOST")
     if not host or clickhouse_connect is None:
         return None
 
     _client = clickhouse_connect.get_client(
         host=host,
-        port=int(os.environ.get("CLICKHOUSE_PORT", "8443")),
-        username=os.environ.get("CLICKHOUSE_USER", "default"),
-        password=os.environ.get("CLICKHOUSE_PASSWORD", ""),
-        database=os.environ.get("CLICKHOUSE_DATABASE", "default"),
+        port=int(_get_secret("CLICKHOUSE_PORT", "8443")),
+        username=_get_secret("CLICKHOUSE_USER", "default"),
+        password=_get_secret("CLICKHOUSE_PASSWORD"),
+        database=_get_secret("CLICKHOUSE_DATABASE", "default"),
         secure=True,
     )
     return _client
