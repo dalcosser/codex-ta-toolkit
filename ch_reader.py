@@ -41,24 +41,36 @@ def _get_secret(key, default=""):
     return default
 
 
+_client_failed = False  # avoid retrying on every call
+
+
 def _get_client():
-    global _client
+    global _client, _client_failed
     if _client is not None:
         return _client
+    if _client_failed:
+        return None
 
     host = _get_secret("CLICKHOUSE_HOST")
     if not host or clickhouse_connect is None:
+        _client_failed = True
         return None
 
-    _client = clickhouse_connect.get_client(
-        host=host,
-        port=int(_get_secret("CLICKHOUSE_PORT", "8443")),
-        username=_get_secret("CLICKHOUSE_USER", "default"),
-        password=_get_secret("CLICKHOUSE_PASSWORD"),
-        database=_get_secret("CLICKHOUSE_DATABASE", "default"),
-        secure=True,
-    )
-    return _client
+    try:
+        _client = clickhouse_connect.get_client(
+            host=host,
+            port=int(_get_secret("CLICKHOUSE_PORT", "8443")),
+            username=_get_secret("CLICKHOUSE_USER", "default"),
+            password=_get_secret("CLICKHOUSE_PASSWORD"),
+            database=_get_secret("CLICKHOUSE_DATABASE", "default"),
+            secure=True,
+        )
+        return _client
+    except Exception as e:
+        import logging
+        logging.warning(f"ClickHouse connection failed: {e}")
+        _client_failed = True
+        return None
 
 
 # ── Public API ────────────────────────────────────────────

@@ -1987,6 +1987,16 @@ except Exception:
 
 st.set_page_config(page_title="CODEX TA", layout="wide")
 
+# --- ClickHouse connection status ---
+try:
+    from ch_reader import ch_available
+    if ch_available():
+        st.sidebar.success("ClickHouse connected", icon="\u2705")
+    else:
+        st.sidebar.warning("ClickHouse not connected \u2014 using local data")
+except Exception:
+    pass
+
 # --- Data dir banner (hidden unless TA_DEBUG_UI=1) ---
 if os.getenv('TA_DEBUG_UI','') == '1':
     try:
@@ -7490,14 +7500,13 @@ def _fetch_ohlc_uncached(
         try:
             _ch_df = ch_load_daily_df(ticker)
             if _ch_df is not None and not _ch_df.empty:
-                _keep = [c for c in ['Open','High','Low','Close','Volume'] if c in _ch_df.columns]
-                _ch_df = _ch_df[_keep].copy()
+                # Set Date/Timestamp as index first
                 if 'Date' in _ch_df.columns:
                     _ch_df.index = _pd.to_datetime(_ch_df['Date'])
-                    _ch_df = _ch_df.drop(columns=['Date'], errors='ignore')
                 elif 'Timestamp' in _ch_df.columns:
                     _ch_df.index = _pd.to_datetime(_ch_df['Timestamp'])
-                    _ch_df = _ch_df.drop(columns=['Timestamp'], errors='ignore')
+                _keep = [c for c in ['Open','High','Low','Close','Volume'] if c in _ch_df.columns]
+                _ch_df = _ch_df[_keep].copy()
                 if not _ch_df.empty:
                     try:
                         st.session_state['last_fetch_provider'] = 'clickhouse'
