@@ -7484,6 +7484,29 @@ def _fetch_ohlc_uncached(
                      ("Polygon", _try_polygon), ("Alpaca", _try_alpaca), ("Tiingo", _try_tiingo)]
     else:
         providers = _auto_providers()
+
+    # ── ClickHouse shortcut for daily data (works from cloud) ──
+    if _interval == '1d' or _interval == '60m':
+        try:
+            _ch_df = ch_load_daily_df(ticker)
+            if _ch_df is not None and not _ch_df.empty:
+                _keep = [c for c in ['Open','High','Low','Close','Volume'] if c in _ch_df.columns]
+                _ch_df = _ch_df[_keep].copy()
+                if 'Date' in _ch_df.columns:
+                    _ch_df.index = _pd.to_datetime(_ch_df['Date'])
+                    _ch_df = _ch_df.drop(columns=['Date'], errors='ignore')
+                elif 'Timestamp' in _ch_df.columns:
+                    _ch_df.index = _pd.to_datetime(_ch_df['Timestamp'])
+                    _ch_df = _ch_df.drop(columns=['Timestamp'], errors='ignore')
+                if not _ch_df.empty:
+                    try:
+                        st.session_state['last_fetch_provider'] = 'clickhouse'
+                    except Exception:
+                        pass
+                    return _ch_df
+        except Exception:
+            pass
+
     for _name, _fn in providers:
         try:
             _df = _fn()
