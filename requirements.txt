@@ -11,3 +11,4 @@ pyarrow
 httpx
 requests
 xlrd
+clickhouse-connect
