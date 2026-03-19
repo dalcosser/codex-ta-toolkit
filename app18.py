@@ -1989,13 +1989,25 @@ st.set_page_config(page_title="CODEX TA", layout="wide")
 
 # --- ClickHouse connection status ---
 try:
-    from ch_reader import ch_available
+    from ch_reader import ch_available, _get_secret
+    _ch_host = _get_secret("CLICKHOUSE_HOST")
     if ch_available():
         st.sidebar.success("ClickHouse connected", icon="\u2705")
+    elif _ch_host:
+        st.sidebar.error(f"ClickHouse host found ({_ch_host[:12]}...) but connection failed")
     else:
-        st.sidebar.warning("ClickHouse not connected \u2014 using local data")
-except Exception:
-    pass
+        _has_secrets = False
+        try:
+            _has_secrets = hasattr(st, 'secrets') and len(st.secrets) > 0
+        except Exception:
+            pass
+        if _has_secrets:
+            _keys = list(st.secrets.keys()) if hasattr(st.secrets, 'keys') else []
+            st.sidebar.warning(f"Secrets found ({_keys[:5]}) but no CLICKHOUSE_HOST")
+        else:
+            st.sidebar.warning("No secrets configured")
+except Exception as _ch_err:
+    st.sidebar.warning(f"CH check error: {_ch_err}")
 
 # --- Data dir banner (hidden unless TA_DEBUG_UI=1) ---
 if os.getenv('TA_DEBUG_UI','') == '1':
